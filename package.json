@@ -1,12 +1,16 @@
 {
   "name": "say-hello-functions",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "description": "Just a test package",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "echo": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup"
   },
   "keywords": [
     "test",
