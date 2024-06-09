@@ -1,8 +1,6 @@
-export function sayHello({firstName, lastName, age}:{
-    firstName: string,
-    lastName: string,
-    age: number
-}) {
+import { sayHelloProps } from './types';
+
+export function sayHello({firstName, lastName, age}: sayHelloProps) {
     console.log('Hello');
     console.log('Your first name is ' + firstName);
     if(lastName) {
